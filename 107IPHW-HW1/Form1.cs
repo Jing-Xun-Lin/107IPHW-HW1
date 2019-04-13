@@ -35,7 +35,7 @@ namespace _107IPHW_HW1
             {
                 for (int y = 0; y < _Image.Cols; y++)
                 {
-                    if ((_Image.Data[x, y, 0] + _Image.Data[x, y, 1] + _Image.Data[x, y, 2]) / 3 >= value)
+                    if (_Image.Data[x, y, 0] >= value)
                     {
                         _Image.Data[x, y, 0] = _Image.Data[x, y, 1] = _Image.Data[x, y, 2] = MAX;
                     }
